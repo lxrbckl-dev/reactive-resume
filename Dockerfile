@@ -18,7 +18,7 @@ RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
     cd /tmp/prod && pnpm install --frozen-lockfile --prod
 
-# ---------- Builder Layer ----------
+# ---------- Builder Layer -----------
 FROM node:24-slim AS builder
 
 ENV PNPM_HOME="/pnpm"
@@ -32,7 +32,7 @@ COPY . .
 
 RUN pnpm run build
 
-# ---------- Runtime Layer ----------
+# ---------- Runtime Layer -----------
 FROM node:24-slim AS runtime
 
 LABEL maintainer="amruthpillai"
