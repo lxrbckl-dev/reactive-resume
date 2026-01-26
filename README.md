@@ -6,6 +6,6 @@
 ---
 
 ### Server Deployment
-X
+[`./compose.yml`](https://github.com/lxrbckl-dev/reactive-resume/blob/main/compose.yml)
 
 ---
