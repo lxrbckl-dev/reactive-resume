@@ -71,7 +71,7 @@ services:
         condition: service_healthy
 
   app:
-    image: amruthpillai/reactive-resume:latest
+    image: lxrbckl/reactive-resume:main
     # image: ghcr.io/amruthpillai/reactive-resume:latest
     environment:
       # Server
@@ -95,7 +95,7 @@ services:
     volumes:
       - reactive_resume_data:/app/data
     ports:
-      - "3000:3000"
+      - "8180:3000"
     depends_on:
       postgres:
         condition: service_healthy
