@@ -6,6 +6,12 @@
 ---
 
 ### Server Deployment
+```bash
+mkdir rxresume
+cd rxresume
+touch compose.yml
+sudo nano compose.yml
+```
 [`./compose.yml`](https://github.com/lxrbckl-dev/reactive-resume/blob/main/compose.yml)
 
 ---
