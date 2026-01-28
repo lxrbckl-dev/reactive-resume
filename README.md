@@ -15,6 +15,7 @@ sudo nano compose.yml
 # https://github.com/lxrbckl-dev/reactive-resume/blob/main/compose.yml
 sudo nano .env
 # https://github.com/lxrbckl-dev/reactive-resume/blob/main/.env.example
+docker compose up -d
 ```
 
 ---
