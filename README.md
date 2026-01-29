@@ -15,4 +15,11 @@ sudo nano compose.yml
 docker compose up -d --pull always --force-recreate
 ```
 
+`Caddyfile`
+```
+<alternative-domain> {
+    redir https://<host-domain>{uri} permanent
+}
+```
+
 ---

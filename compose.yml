@@ -126,7 +126,7 @@ services:
       # --- Server ---
       - TZ=Etc/UTC
       - NODE_ENV=production
-      - APP_URL=http://localhost:8180
+      - APP_URL=<host-domain>
 
       # Printer
       - PRINTER_APP_URL=http://app:3000
