@@ -11,7 +11,7 @@ import { getStorageService, uploadFile } from "./storage";
 const SCREENSHOT_TTL = 1000 * 60 * 60; // 1 hour
 
 async function getBrowser(): Promise<Browser> {
-	const args = ["--disable-dev-shm-usage", "--disable-features=LocalNetworkAccessChecks,site-per-process,FedCm"];
+	const args = ["--disable-dev-shm-usage", "--disable-features=LocalNetworkAccessChecks,site-per-process,FedCm,HttpsUpgrades"];
 
 	const endpoint = new URL(env.PRINTER_ENDPOINT);
 	const isWebSocket = endpoint.protocol.startsWith("ws");
