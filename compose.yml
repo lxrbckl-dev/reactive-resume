@@ -1,4 +1,4 @@
-name: reactive_resume
+name: reactive_resume # <- HERE
 
 services:
   postgres:
@@ -126,10 +126,10 @@ services:
       # --- Server ---
       - TZ=Etc/UTC
       - NODE_ENV=production
-      - APP_URL=
+      - APP_URL= # <- HERE
 
       # Printer
-      - PRINTER_APP_URL=http://app:3000
+      - PRINTER_APP_URL= # <- HERE
       - PRINTER_ENDPOINT=ws://browserless:3000?token=1234567890
 
       # Database
@@ -137,7 +137,7 @@ services:
 
       # Auth
       # openssl rand -hex 32
-      - AUTH_SECRET=
+      - AUTH_SECRET= # <- HERE
 
       # Storage (SeaweedFS S3)
       - S3_ACCESS_KEY_ID=seaweedfs
@@ -155,7 +155,7 @@ services:
     volumes:
       - reactive_resume_data:/app/data
     ports:
-      - "8180:3000"
+      - "8180:3000" # <- HERE
     depends_on:
       postgres:
         condition: service_healthy
