@@ -14,6 +14,7 @@ sudo nano compose.yml
 # https://github.com/lxrbckl-dev/reactive-resume/blob/main/compose.yml
 # add AUTH_SECRET
 # add APP_URL
+# add PRINTER_APP_URL
 # adjust PORT
 # adjust NAME
 docker compose up -d --pull always --force-recreate
