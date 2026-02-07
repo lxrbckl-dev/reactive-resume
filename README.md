@@ -23,8 +23,9 @@ When running multiple Docker Compose stacks on the same machine, each stack need
 
 `Caddyfile`
 ```
-<alternative-domain> {
-    redir https://<host-domain>{uri} permanent
+<domain> {
+    reverse_proxy http://192.168.68.200:8180
+    encode gzip
 }
 ```
 
