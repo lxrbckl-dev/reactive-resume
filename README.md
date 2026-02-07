@@ -19,6 +19,7 @@ sudo nano compose.yml
 # adjust NAME
 docker compose up -d --pull always --force-recreate
 ```
+When running multiple Docker Compose stacks on the same machine, each stack needs unique host ports to avoid conflicts. If you see "port is already allocated" errors, increment the host port numbers (left side of HOST:CONTAINER) for each new instance while keeping container ports (right side) the same.
 
 `Caddyfile`
 ```
