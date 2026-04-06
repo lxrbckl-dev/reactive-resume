@@ -82,7 +82,7 @@
 		"js-cookie": "^3.0.5",
 		"monaco-editor": "^0.55.1",
 		"motion": "^12.29.0",
-		"nodemailer": "^7.0.12",
+		"nodemailer": "^8.0.4",
 		"pg": "^8.17.2",
 		"puppeteer-core": "^24.36.0",
 		"qrcode.react": "^4.2.0",
