@@ -1,7 +1,6 @@
 import { createServerOnlyFn } from "@tanstack/react-start";
 import { drizzle, type NodePgDatabase } from "drizzle-orm/node-postgres";
 import { Pool } from "pg";
-import { schema } from "@/integrations/drizzle";
 import { env } from "@/utils/env";
 
 // During hot reload (i.e., in development), global assignment ensures the pool/client persist across reloads.
@@ -9,7 +8,7 @@ import { env } from "@/utils/env";
 
 declare global {
 	var __pool: Pool | undefined;
-	var __drizzle: NodePgDatabase<typeof schema> | undefined;
+	var __drizzle: NodePgDatabase | undefined;
 }
 
 function getPool() {
@@ -21,7 +20,7 @@ function getPool() {
 
 function makeDrizzleClient() {
 	const pool = getPool();
-	return drizzle({ client: pool, schema });
+	return drizzle({ client: pool });
 }
 
 const getDatabaseServerFn = createServerOnlyFn(() => {
