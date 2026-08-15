@@ -2,7 +2,8 @@ import { BetterAuthError } from "@better-auth/core/error";
 import { passkey } from "@better-auth/passkey";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { betterAuth } from "better-auth/minimal";
-import { apiKey, type GenericOAuthConfig, genericOAuth, twoFactor } from "better-auth/plugins";
+import { apiKey } from "@better-auth/api-key";
+import { type GenericOAuthConfig, genericOAuth, twoFactor } from "better-auth/plugins";
 import { username } from "better-auth/plugins/username";
 import { tanstackStartCookies } from "better-auth/tanstack-start";
 import { db } from "@/integrations/drizzle/client";
@@ -110,7 +111,7 @@ const getAuthConfig = () => {
 		user: {
 			changeEmail: {
 				enabled: true,
-				sendChangeEmailVerification: async ({ user, newEmail, url }) => {
+				sendChangeEmailConfirmation: async ({ user, newEmail, url }) => {
 					await sendEmail({
 						to: newEmail,
 						subject: "Verify your new email",
