@@ -19,6 +19,8 @@ overrides:
   h3-v2: npm:h3@>=2.0.1-rc.17
   kysely: '>=0.28.14'
   effect: '>=3.20.0'
+  seroval: '>=1.5.3 <2'
+  basic-ftp: '>=5.3.1 <6'
 
 importers:
 
@@ -4425,10 +4427,9 @@ packages:
     resolution: {integrity: sha512-KeUZdBuxngy825i8xvzaK1Ncnkx0tBmb3k8DkEuqjKRkmtvNTjey2ZsNeh8Dw4lfKvbCOu9oeNx2TKm2vHqcRw==}
     hasBin: true
 
-  basic-ftp@5.1.0:
-    resolution: {integrity: sha512-RkaJzeJKDbaDWTIPiJwubyljaEPwpVWkm9Rt5h9Nd6h7tEXTJ3VB4qxdZBioV7JO5yLUaOKwz7vDOzlncUsegw==}
+  basic-ftp@5.3.1:
+    resolution: {integrity: sha512-bopVNp6ugyA150DDuZfPFdt1KZ5a94ZDiwX4hMgZDzF+GttD80lEy8kj98kbyhLXnPvhtIo93mdnLIjpCAeeOw==}
     engines: {node: '>=10.0.0'}
-    deprecated: Security vulnerability fixed in 5.2.1, please upgrade
 
   bcrypt@6.0.0:
     resolution: {integrity: sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg==}
@@ -7356,10 +7357,10 @@ packages:
     resolution: {integrity: sha512-X7p4MEDTi+60o2sXZ4bnDBhgsUYDSkQEvzYZuJyFqWg9jcoPsHts5nrg5O956py2wyt28lUrBxk0M0/wU8URpA==}
     engines: {node: '>=10'}
     peerDependencies:
-      seroval: ^1.0
+      seroval: '>=1.5.3 <2'
 
-  seroval@1.4.2:
-    resolution: {integrity: sha512-N3HEHRCZYn3cQbsC4B5ldj9j+tHdf4JZoYPlcI4rRYu0Xy4qN8MQf1Z08EibzB0WpgRG5BGK08FTrmM66eSzKQ==}
+  seroval@1.6.2:
+    resolution: {integrity: sha512-mPT+SD2TrlB6wvte1KkYOYUkubaTbd6pZ/6Kk3C9nxzrHmCZyhxOO7XGAeL7f+yLKZglzGtM9odUVvg/EhO+vQ==}
     engines: {node: '>=10'}
 
   serve-static@2.2.1:
@@ -12503,8 +12504,8 @@ snapshots:
       '@tanstack/history': 1.154.14
       '@tanstack/store': 0.8.0
       cookie-es: 2.0.0
-      seroval: 1.4.2
-      seroval-plugins: 1.4.2(seroval@1.4.2)
+      seroval: 1.6.2
+      seroval-plugins: 1.4.2(seroval@1.6.2)
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
@@ -12565,7 +12566,7 @@ snapshots:
       '@tanstack/router-core': 1.157.14
       '@tanstack/start-fn-stubs': 1.154.7
       '@tanstack/start-storage-context': 1.157.14
-      seroval: 1.4.2
+      seroval: 1.6.2
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
@@ -12609,7 +12610,7 @@ snapshots:
       '@tanstack/start-client-core': 1.157.14
       '@tanstack/start-storage-context': 1.157.14
       h3-v2: h3@2.0.1-rc.26(crossws@0.4.10(srvx@0.11.15))
-      seroval: 1.4.2
+      seroval: 1.6.2
       tiny-invariant: 1.3.3
     transitivePeerDependencies:
       - crossws
@@ -13175,7 +13176,7 @@ snapshots:
 
   baseline-browser-mapping@2.9.16: {}
 
-  basic-ftp@5.1.0: {}
+  basic-ftp@5.3.1: {}
 
   bcrypt@6.0.0:
     dependencies:
@@ -14296,7 +14297,7 @@ snapshots:
 
   get-uri@6.0.5:
     dependencies:
-      basic-ftp: 5.1.0
+      basic-ftp: 5.3.1
       data-uri-to-buffer: 6.0.2
       debug: 4.4.3
     transitivePeerDependencies:
@@ -16158,11 +16159,11 @@ snapshots:
 
   serialize-javascript@7.1.0: {}
 
-  seroval-plugins@1.4.2(seroval@1.4.2):
+  seroval-plugins@1.4.2(seroval@1.6.2):
     dependencies:
-      seroval: 1.4.2
+      seroval: 1.6.2
 
-  seroval@1.4.2: {}
+  seroval@1.6.2: {}
 
   serve-static@2.2.1:
     dependencies:
