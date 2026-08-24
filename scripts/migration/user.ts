@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { inArray, or, sql } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/node-postgres";
 import { Pool, type QueryResult } from "pg";
-import { schema } from "@/integrations/drizzle";
+import { relations, schema } from "@/integrations/drizzle";
 import { generateId, toUsername } from "@/utils/string";
 
 type Provider = "credential" | "google" | "github" | "custom";
@@ -54,7 +54,7 @@ const productionPool = new Pool({ connectionString: productionUrl });
 const localPool = new Pool({ connectionString: localUrl });
 
 const productionDb = drizzle({ client: productionPool });
-const localDb = drizzle({ client: localPool, schema });
+const localDb = drizzle({ client: localPool, relations });
 
 // == Persistent mapping file path ==
 const USER_ID_MAP_FILE = "./scripts/migration/user-id-map.json";
