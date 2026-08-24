@@ -11,7 +11,7 @@ overrides:
   lodash: '>=4.18.0 <5'
   path-to-regexp: '>=8.4.0 <9'
   serialize-javascript: '>=7.0.5 <8'
-  srvx: '>=0.11.13'
+  srvx: '>=0.11.13 <1'
   picomatch: '>=4.0.4 <5'
   yaml: '>=1.10.3 <3'
   fast-xml-parser: '>=5.7.0 <6'
@@ -4863,7 +4863,7 @@ packages:
   crossws@0.4.10:
     resolution: {integrity: sha512-pz3oubH/dt12KjqsUB0IuXW4nwRDQ583iDsP4555Cpdqx0NoU7pGlWBcayyFI8f/l/idRpgjMEfwuOxSWJYlIA==}
     peerDependencies:
-      srvx: '>=0.11.13'
+      srvx: '>=0.11.13 <1'
     peerDependenciesMeta:
       srvx:
         optional: true

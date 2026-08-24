@@ -145,7 +145,7 @@
 			"lodash": ">=4.18.0 <5",
 			"path-to-regexp": ">=8.4.0 <9",
 			"serialize-javascript": ">=7.0.5 <8",
-			"srvx": ">=0.11.13",
+			"srvx": ">=0.11.13 <1",
 			"picomatch": ">=4.0.4 <5",
 			"yaml": ">=1.10.3 <3",
 			"fast-xml-parser": ">=5.7.0 <6",
